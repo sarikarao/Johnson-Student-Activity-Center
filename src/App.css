@@ -1,0 +1,254 @@
+.App {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #0f172a;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+  color: #f8fafc;
+  padding: 3rem 2rem;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.25);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 0.75rem;
+  max-width: 720px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(248, 250, 252, 0.85);
+}
+
+.app-content {
+  padding: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.upload-section {
+  margin-bottom: 2.5rem;
+}
+
+.upload-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.15);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.upload-card h2 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+}
+
+.helper-text {
+  color: #475569;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.helper-text code {
+  background: rgba(148, 163, 184, 0.15);
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.file-upload {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.6rem;
+  background: #2563eb;
+  color: #f8fafc;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+}
+
+.file-upload:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.35);
+}
+
+.file-upload input {
+  display: none;
+}
+
+.file-name {
+  margin-top: 1rem;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.error-text {
+  margin-top: 0.75rem;
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.warning-text {
+  margin-top: 0.75rem;
+  color: #b45309;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  padding: 0.75rem 1rem;
+  border-radius: 0.65rem;
+  font-weight: 500;
+}
+
+.guidance {
+  margin-top: 1.75rem;
+  background: rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(37, 99, 235, 0.15);
+  padding: 1.25rem;
+  border-radius: 0.9rem;
+}
+
+.guidance h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+  color: #1d4ed8;
+}
+
+.guidance ul {
+  margin: 0 0 0.75rem 1.25rem;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: #0f2a11;
+  color: #f8fafc;
+  padding: 1.75rem;
+  border-radius: 1rem;
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.3);
+}
+
+.stat-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: rgba(248, 250, 252, 0.85);
+}
+
+.stat-value {
+  margin-top: 0.75rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.data-preview {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1.75rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.12);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.data-preview h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+  text-align: left;
+  white-space: nowrap;
+}
+
+thead {
+  background: rgba(37, 99, 235, 0.08);
+}
+
+.table-note {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.75rem;
+}
+
+.chart-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.18);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.chart-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.chart-wide {
+  grid-column: 1 / -1;
+}
+
+.chart-card.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #475569;
+}
+
+.chart-card.empty p {
+  max-width: 480px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .app-content {
+    padding: 1.5rem;
+  }
+
+  .app-header {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .app-header h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+}
