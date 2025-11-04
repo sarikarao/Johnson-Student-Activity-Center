@@ -26,7 +26,6 @@ ChartJS.register(
 );
 
 type Nullable<T> = T | null | undefined;
-
 interface StudentRecord {
   firstName?: string;
   lastName?: string;
@@ -57,7 +56,10 @@ interface StudentRecord {
   checkInDate?: Date | null;
   checkOutDate?: Date | null;
   elapsedTime?: number | null;
+
+  [key: string]: string | number | boolean | Date | null | undefined | (Date[] | undefined);
 }
+
 
 type ColumnKey = keyof StudentRecord;
 
